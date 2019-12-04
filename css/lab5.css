@@ -38,7 +38,7 @@ nav li a:hover{
     text-decoration: underline;
 }
 .banner{
-    background-image: url("file:///E:/Fpoly/html5/lab5/images/Rectangle.jpg");
+    background-image: url("../images/Rectangle.jpg");
     color: white;
     font-size: 100% 100%;
     text-align: center;
