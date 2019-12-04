@@ -111,13 +111,13 @@ nav li a:hover{
 
 .Rectangle-colums-items:hover{
     background-color: #333399;
-    background-image: url("file:///C:/Users/Admin/Downloads/Rectangle%203.png ");
+    background-image: url("../images/Rectangle%203.png ");
     background-size: 100% 100%;
     color: white;
 }
 
 .album-images{
-    background-image: url("file:///C:/Users/Admin/Downloads/Rectangle%204.1.png");
+    background-image: url("../images/Rectangle%204.1.png");
     background-size: 100% 100%;
     padding-bottom: 150px;
     padding-top: 150px;
