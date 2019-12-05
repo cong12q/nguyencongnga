@@ -7,13 +7,15 @@
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
 }
-
 .logo{
     display: grid;
     grid-template-columns: 1fr;
     font-size: 18px;
     align-items: center;
     padding-bottom: 1em;
+}
+.sub-menu{
+    padding: 0;
 }
 .logo-images{
   text-align: center;
@@ -111,7 +113,7 @@ nav li a:hover{
 
 .Rectangle-colums-items:hover{
     background-color: #333399;
-    background-image: url("../images/Rectangle3.png ");
+    background-image: url("../images/Rectangle3.png");
     background-size: 100% 100%;
     color: white;
 }
@@ -120,7 +122,7 @@ nav li a:hover{
     background-image: url("../images/Rectangle 4.1.png");
     background-size: 100% 100%;
     padding-bottom: 150px;
-    padding-top: 150px;
+    padding-top: 1em;
 }
 .album-images-colum{
     display: grid;
@@ -213,11 +215,10 @@ nav li a:hover{
     grid-template-columns: 1fr;
     grid-gap: 2em;
     padding-bottom: 55px;
-    padding: 0 10%;
     margin-top: 2em;
+    padding: 0 10%;
 }
 .marketting-colums{
-
     text-align: center;
     border-radius: 15px;
     border: 1px solid gray;
@@ -232,9 +233,9 @@ p{
 .marketting-colums p{
     font-size: 18px;
     line-height: 32px;
- 
     margin: 0 auto;
     margin-top: 30px;
+    padding: 0 20%;
 }
 .marketting-colums button{
   
@@ -265,19 +266,17 @@ p{
 }
 .communications-items{
     background-image: url(../images/5.png);
-  
     padding-top: 10px;
-
 }
 
 .communications-colums{
     padding-bottom: 70px;
- 
     margin: 0 auto;
     background-color: #EEF2F6;
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
+    margin-top: 2em;
 }
 .communications-colums input{
     padding-bottom: 1em;
@@ -290,6 +289,7 @@ p{
 }
 .file{
     text-align: left;
+    
 }
 .file li{
     display: inline-block;
@@ -348,7 +348,7 @@ footer{
 .logo-footer{
     margin-left: 120px;
     margin-top: 60px;
-    padding: 0 9%;
+    padding: 2%;
     margin: 0 auto;
 }
 
@@ -389,12 +389,17 @@ button:hover{
 .button:hover{
     background-color: cadetblue;
 }
+.album-images p{
+    font-size: 36px;
+    text-align: center;
+    color: white;
+}
 @media (min-width: 576px){
     .Rectangle-colums{
         padding: 0 20%;
     }
     .album-images-colum{
-        padding: 0 20%;
+        padding: 0 15%;
     }
     .marketting{
         padding: 0 20%;
@@ -418,17 +423,20 @@ button:hover{
     .Rectangle-colums{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        padding: 0 7%;
+        padding: 0 5%;
     }
     .album-images-colum{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 10%;
     }
     .album-images-text-none{
         margin-top: 3em;
         display: inline-block;
     }
-    .S-people{
+    .S-people-all{
+        max-width: 1440px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -439,10 +447,12 @@ button:hover{
     .marketting{
         display: grid;
         grid-template-columns: 1fr 1fr  ;
+        padding: 0 10%;
     }
     .marketting-rows{
         display: grid;
         grid-template-columns: 1fr 1fr ;
+        padding: 0 10%;
     }
     .file{
         text-align: center;
@@ -470,6 +480,8 @@ button:hover{
     .logo{
         display: grid;
         grid-template-columns: 1fr 2fr;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     nav{
         align-items: center;
@@ -486,8 +498,12 @@ button:hover{
     .Rectangle-colums{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
     }
-    .S-people{
+    .S-people-all{
+        max-width: 1440px;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -498,29 +514,49 @@ button:hover{
     .marketting{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 2em;
     }
     .marketting-rows{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
+        margin-top: 2em;
     }
     .communications-colums{
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 980px;
+        margin: 0 auto;
+        margin-top: 2em;
+        border-radius: 10px;
     }
     .footer-all{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
+        max-width: 1440px;
+        margin: 0 auto;
     }
     .album-images-colum{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 0.2em;
+        max-width: 1440px;
+        margin: 0 auto; 
     }
+    
     .album-images-text-none{
         margin-top: 3em;
         display: inline-block;
     }
+    .logo-footer{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
     .footer-all{
-        max-width: 1200px;
+        max-width: 1440px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 0 auto;
@@ -533,7 +569,8 @@ button:hover{
             margin-left: 140px;
         }
         .Social-Media{
-            padding: 0 9%;
+            max-width: 1440px;
+            margin: 0 auto;
         }
         .communications-colums input{
             padding-bottom: 10px;
@@ -547,5 +584,20 @@ button:hover{
         }
     .file{
         text-align: left;
+    }
+    .banner-items-text{
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .communications{
+        margin-top: 3em;
+        text-align: center;
+        color: white;
+        min-height: 600px;
+    }
+    .communications-items{
+        background-image: url(../images/5.png);
+        padding-top: 10px;
+        height: 350px;
     }
 }
